@@ -3,7 +3,7 @@ from typing import Self
 class Popolarità:
     pass 
 
-class RealGEZ(float):
+class RealZO(float):
 
     def __new__(cls, number:float| int | bool | str | Self) -> Self:
 
@@ -14,7 +14,7 @@ class RealGEZ(float):
         else:
             raise ValueError(f"Il numero inserito {number} deve essere compreso tra 0 e 1 (estremi inclusi) ed un reale")
 
-class RealGEZ(float):
+class RealGZ(float):
 
     def __new__(cls, number:float| int | bool | str | Self) -> Self:
 

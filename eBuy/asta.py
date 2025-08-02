@@ -9,25 +9,31 @@ class Asta:
     _prezzo_bid:RealGZ # noto alla nascita 
     _scadenza:datetime # noto alla nascita
 
-    def __init__(self, preddo_bid:RealGZ, scadenza:datetime) -> None:
-        pass 
+    def __init__(self, prezzo_bid:RealGZ, scadenza:datetime) -> None:
+        
+        self._prezzo_bid = self.setPrezzo_bid(prezzo_bid)
+        self._scadenza = self.setScadenza(scadenza)
 
     def setPrezzo_bid(self, prezzo_bid:RealGZ) -> None: 
-        pass 
+        self.prezzo_bid = prezzo_bid
 
     def getPrezzo_bid(self) -> RealGZ: 
-        pass 
+        return self.prezzo_bid
 
     def setScadenza(self, scadenza:datetime) -> None: 
-        pass 
+        self._scadenza = scadenza
 
     def getScadenza(self) -> datetime:
-        pass 
+        return self._scadenza
 
     def prezzo(self, i:datetime) -> RealGEZ:
-        pass 
+        pass  
 
     def vincitore(self) -> Utente | None: 
         pass 
 
-    def ultimo_bid(self, i:datetime)
+    def ultimo_bid(self, i:datetime) -> Bid | None:
+        pass 
+
+    def finita(self) -> bool: 
+        pass 
